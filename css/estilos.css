@@ -1,0 +1,270 @@
+:root {
+    /*FUENTES*/
+    --pDisplay: "Playfair Display";
+    --fMontserrat: "Montserrat";
+
+    /*TAMAÑOS- ANCHURAS*/
+    --tamUno: 400;
+    --tamDos: 500;
+    --tamTres: 700;
+
+    --tipoTitulo: 3rem;
+    --tipoParrafoUno: 0.875rem;
+    --tipoTam: 0.625rem;
+    --tipoTamCero: 1rem;
+    --tipoTamUno: 1.125rem;
+    --tipoTamDos: 1.5rem;
+
+    /*COLORES*/
+    --gris: #4F4F4F;
+    --gris__dos: #333333;
+}
+
+.contenedor__global {
+    margin: 3.35rem auto;
+    width: min(100% - 2rem, 70rem);
+}
+
+.contenedor__introduccion {
+    width: 100%;
+}
+
+.contenedor__introduccion h1 {
+    width: auto;
+    font-family: var(--pDisplay);
+    font-weight: var(--tamTres);
+    font-size: var(--tipoTitulo);
+}
+
+.contenedor__introduccion--texto {
+    list-style-image: url(../img/6dots.svg);
+    width: min(60% - 2rem, 70rem);
+}
+
+@media (max-width: 819px) {
+    .contenedor__introduccion--texto {
+        width: min(100% - 2rem, 70rem);
+    }
+}
+
+.contenedor__introduccion .contenedor__introduccion--texto li p {
+    font-family: var(--fMontserrat);
+    font-size: var(--tipoParrafoUno);
+    font-weight: var(--tamDos);
+    color: var(--gris);
+    font-style: italic;
+    line-height: 17px;
+}
+
+.contenedor__introduccion .contenedor__introduccion--imagen {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.contenedor__introduccion .contenedor__introduccion--imagen img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedor__ingredientes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+.contenedor__ingredientes .contenedor__ingredientes--general {
+    max-width: 577px;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--general .contenedor__ingredientes--subSeccion .contenedor__ingredientes--subSeccion-seccion {
+    margin-bottom: 12px;
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--general .contenedor__ingredientes--subSeccion .contenedor__ingredientes--subSeccion-seccion label {
+    font-family: var(--fMontserrat);
+    font-weight: var(--tamUno);
+    font-size: var(--tipoTamCero);
+    line-height: 25px;
+    color: var(--gris__dos);
+    max-width: 577px;
+    width: 100%;
+
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--general .contenedor__ingredientes--subSeccion .contenedor__ingredientes--subSeccion-seccion label input[type="checkbox"] {
+    margin-right: 17px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--general .contenedor__ingredientes--subSeccion .contenedor__ingredientes--subSeccion-seccion label input[type="checkbox"]:checked {
+    background-image: url(../img/icons8-de-acuerdo-48.png);
+    background-color: green;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+.color__font {
+    color: var(--gris);
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--general h2 {
+    font-family: var(--pDisplay);
+    font-size: var(--tipoTamDos);
+    font-weight: var(--tamTres);
+    margin-top: 2rem;
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--general h3 {
+    color: var(--gris__dos);
+    font-family: var(--pDisplay);
+    font-size: var(--tipoTamUno);
+    font-weight: var(--tamDos);
+    font-style: italic;
+    line-height: 24px;
+    margin: 38px 0;
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--iconos {
+    width: 25%;
+    height: 367px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--iconos .iconos__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--iconos .iconos__wrapper .icono__wrapper-icono img {
+    width: 27px;
+
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--iconos .iconos__wrapper .icono__wrapper-texto {
+    padding: -.1rem;
+}
+
+.subtittle {
+    font-family: var(--fMontserrat);
+    font-weight: var(--tamTres);
+    font-size: var(--tipoTam);
+    text-transform: uppercase;
+    line-height: 12.19px;
+    color: #BDBDBD;
+    width: 100%;
+    margin-bottom: -.4rem;
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--iconos .iconos__wrapper .icono__wrapper-texto .texto__style {
+    font-family: var(--fMontserrat);
+    font-weight: var(--tamDos);
+    font-size: var(--tipoParrafoUno);
+    line-height: 17.07px;
+    color: var(--gris__dos);
+}
+
+.contenedor__ingredientes .contenedor__ingredientes--iconos .iconos__wrapper .icono__wrapper-texto .text__orange {
+    color: #F2994A;
+}
+
+@media (max-width: 619px) {
+    .contenedor__ingredientes {
+        flex-direction: column-reverse;
+    }
+
+    .contenedor__ingredientes .contenedor__ingredientes--general {
+        width: 100%;
+    }
+
+    .contenedor__ingredientes .contenedor__ingredientes--iconos {
+        width: 100%;
+        height: 200px;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+
+    .contenedor__introduccion h1 {
+        font-size: 2rem;
+    }
+
+    .contenedor__ingredientes .contenedor__ingredientes--iconos .iconos__wrapper .icono__wrapper-icono img {
+        width: 20px;
+    }
+}
+
+.contenedor__ingredientes--general .instrucciones__contenedor p {
+
+    font-family: var(--fMontserrat);
+    font-style: italic;
+    font-weight: normal;
+    font-size: var(--tipoTamCero);
+    line-height: 150%;
+    color: #BDBDBD;
+    margin-left: 2rem;
+}
+
+.contenedor__ingredientes--general .instrucciones__contenedor .lista__instrucciones li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contenedor__ingredientes--general .instrucciones__contenedor .lista__instrucciones li .btn__instructions {
+    margin-top: 1rem;
+    width: 36px;
+    height: 36px;
+    background-color: #F2994A;
+    border-radius: 6px;
+    font-family: var(--pDisplay);
+    font-weight: var(--tamTres);
+    font-size: var(--tipoTamDos);
+    color: #FFFF;
+    line-height: 32px;
+    text-align: center;
+}
+
+.contenedor__ingredientes--general .instrucciones__contenedor .lista__instrucciones li p {
+    font-family: var(--fMontserrat);
+    font-weight: var(--tamUno);
+    font-size: var(--tipoTamCero);
+    line-height: 19.5px;
+    max-width: 528px;
+    width: 100%;
+    color: #333333;
+}
+
+.footer__section {
+    margin: 4rem 0 2rem 0;
+    width: 100%;
+}
+
+.footer__section p {
+    text-align: center;
+    font-family: var(--fMontserrat);
+    font-weight: var(--tamDos);
+    font-size: var(--tipoParrafoUno);
+    line-height: 17px;
+    color: #828282;
+}
